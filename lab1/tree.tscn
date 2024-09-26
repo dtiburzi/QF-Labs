@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://dtyu7jyjij4uq"]
+
+[node name="Tree" type="Node2D"]
+
+[node name="ColorRect" type="ColorRect" parent="."]
+anchors_preset = -1
+anchor_left = -0.458
+anchor_right = -0.458
+offset_left = -20.0
+offset_top = 40.0
+offset_right = 20.0
+offset_bottom = 136.0
+color = Color(0.469108, 0.233438, 0.186056, 1)
+
+[node name="ColorRect2" type="ColorRect" parent="."]
+anchors_preset = -1
+anchor_left = -0.458
+anchor_right = -0.458
+offset_left = -53.0
+offset_top = -56.0
+offset_right = 53.0
+offset_bottom = 46.0
+color = Color(0.89334, 0.568795, 0.0905791, 1)

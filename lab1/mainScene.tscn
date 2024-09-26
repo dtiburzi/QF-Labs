@@ -1,0 +1,30 @@
+[gd_scene load_steps=4 format=3 uid="uid://ovrsgckww0qx"]
+
+[ext_resource type="Texture2D" uid="uid://dpuf0k4mgv3lg" path="res://icon.svg" id="1_0xqhg"]
+[ext_resource type="Texture2D" uid="uid://dnt317108j3x0" path="res://image/cat.png" id="1_cnxkq"]
+[ext_resource type="PackedScene" uid="uid://dtyu7jyjij4uq" path="res://tree.tscn" id="3_gsavr"]
+
+[node name="Cat" type="Sprite2D"]
+position = Vector2(459, 314)
+texture = ExtResource("1_cnxkq")
+
+[node name="robot" type="Sprite2D" parent="."]
+position = Vector2(179, 1)
+rotation = 1.87432
+scale = Vector2(0.637156, 0.637156)
+texture = ExtResource("1_0xqhg")
+
+[node name="Tree" parent="." instance=ExtResource("3_gsavr")]
+position = Vector2(-321, 191)
+
+[node name="Tree2" parent="." instance=ExtResource("3_gsavr")]
+position = Vector2(317, 184)
+
+[node name="Tree3" parent="." instance=ExtResource("3_gsavr")]
+position = Vector2(591, -63)
+
+[node name="Tree4" parent="." instance=ExtResource("3_gsavr")]
+position = Vector2(-213, -209)
+
+[node name="Tree5" parent="." instance=ExtResource("3_gsavr")]
+position = Vector2(346, -175)
