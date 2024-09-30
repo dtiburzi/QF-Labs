@@ -4,27 +4,43 @@
 [ext_resource type="Texture2D" uid="uid://dnt317108j3x0" path="res://image/cat.png" id="1_cnxkq"]
 [ext_resource type="PackedScene" uid="uid://dtyu7jyjij4uq" path="res://tree.tscn" id="3_gsavr"]
 
-[node name="Cat" type="Sprite2D"]
-position = Vector2(459, 314)
+[node name="level" type="Node2D"]
+
+[node name="Forest" type="Node2D" parent="."]
+
+[node name="ColorRect" type="ColorRect" parent="Forest"]
+offset_left = -551.0
+offset_top = -311.0
+offset_right = 1184.0
+offset_bottom = 677.0
+color = Color(0.619299, 0.640052, 0.301254, 1)
+
+[node name="Tree" parent="Forest" instance=ExtResource("3_gsavr")]
+position = Vector2(114, 107)
+
+[node name="Tree2" parent="Forest" instance=ExtResource("3_gsavr")]
+position = Vector2(164, 372)
+
+[node name="Tree3" parent="Forest" instance=ExtResource("3_gsavr")]
+position = Vector2(538, 82)
+
+[node name="Tree4" parent="Forest" instance=ExtResource("3_gsavr")]
+position = Vector2(671, 482)
+
+[node name="Tree5" parent="Forest" instance=ExtResource("3_gsavr")]
+position = Vector2(1013, 284)
+
+[node name="cat" type="Node2D" parent="Forest/Tree5"]
+
+[node name="Cat" type="Sprite2D" parent="Forest/Tree5/cat"]
+position = Vector2(-449, 32)
 texture = ExtResource("1_cnxkq")
 
-[node name="robot" type="Sprite2D" parent="."]
-position = Vector2(179, 1)
-rotation = 1.87432
-scale = Vector2(0.637156, 0.637156)
+[node name="Camera2D" type="Camera2D" parent="Forest/Tree5/cat/Cat"]
+position = Vector2(-28, -9)
+
+[node name="Icon" type="Sprite2D" parent="Forest/Tree5/cat/Cat"]
+position = Vector2(193, -7)
+rotation = 0.538577
+scale = Vector2(0.65625, 0.65625)
 texture = ExtResource("1_0xqhg")
-
-[node name="Tree" parent="." instance=ExtResource("3_gsavr")]
-position = Vector2(-321, 191)
-
-[node name="Tree2" parent="." instance=ExtResource("3_gsavr")]
-position = Vector2(317, 184)
-
-[node name="Tree3" parent="." instance=ExtResource("3_gsavr")]
-position = Vector2(591, -63)
-
-[node name="Tree4" parent="." instance=ExtResource("3_gsavr")]
-position = Vector2(-213, -209)
-
-[node name="Tree5" parent="." instance=ExtResource("3_gsavr")]
-position = Vector2(346, -175)

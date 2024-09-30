@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://bxgoa15uhkpdf"]
+
+[ext_resource type="PackedScene" uid="uid://d4hc877nfpxbk" path="res://Assets/level.tscn" id="1_1ld7a"]
+[ext_resource type="PackedScene" uid="uid://b11jwo2n2jxm8" path="res://Assets/player.tscn" id="2_0pmb8"]
+
+[node name="root" type="Node2D"]
+
+[node name="level" parent="." instance=ExtResource("1_1ld7a")]
+
+[node name="player" type="Node2D" parent="."]
+
+[node name="Icon" parent="player" instance=ExtResource("2_0pmb8")]
+position = Vector2(280, 112)
