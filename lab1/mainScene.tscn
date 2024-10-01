@@ -37,7 +37,7 @@ position = Vector2(-449, 32)
 texture = ExtResource("1_cnxkq")
 
 [node name="Camera2D" type="Camera2D" parent="Forest/Tree5/cat/Cat"]
-position = Vector2(-28, -9)
+position = Vector2(-27, -9)
 
 [node name="Icon" type="Sprite2D" parent="Forest/Tree5/cat/Cat"]
 position = Vector2(193, -7)
