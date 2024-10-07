@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://bhyf80rpki7dj"]
+
+[ext_resource type="Script" path="res://controlable_player.gd" id="1_pan4b"]
+
+[node name="controlablePlayer" type="Node2D"]
+script = ExtResource("1_pan4b")

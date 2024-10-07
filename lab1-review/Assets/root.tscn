@@ -10,4 +10,11 @@
 [node name="player" type="Node2D" parent="."]
 
 [node name="Icon" parent="player" instance=ExtResource("2_0pmb8")]
-position = Vector2(280, 112)
+position = Vector2(434, 106)
+
+[node name="Button" type="Button" parent="."]
+offset_left = 469.0
+offset_top = 304.0
+offset_right = 511.0
+offset_bottom = 335.0
+text = "click"
